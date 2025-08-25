@@ -26,10 +26,16 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+            
+
+
         updatable.update(dt)
+
         screen.fill("black")
+
         for thing in draweble:
             thing.draw(screen)
+            
         dt =clock.tick(60) /1000
         pygame.display.flip()
         
