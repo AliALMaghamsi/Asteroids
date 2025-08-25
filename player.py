@@ -3,12 +3,13 @@ from constants import PLAYER_TURN_SPEED , PLAYER_SPEED
 import pygame
 
 class Player(CircleShape):
+    
     def __init__(self, x, y, radius):
         super().__init__(x, y, radius)
         self.rotation = 0
         self.x = x
         self.y = y
-
+        
 
    
     def triangle(self):
